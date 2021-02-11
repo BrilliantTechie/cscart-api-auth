@@ -68,6 +68,6 @@ function fn_api_auth_routines($request, $auth) {
     return array($status, $user_data, $user_login, $password, $salt);
 }
 
-function fn_api_login_api_check_access($this, $entity, $method_name, &$can_access) {
+function fn_api_login_api_check_access($api, $entity, $method_name, &$can_access) {
     $can_access = true;
 }
